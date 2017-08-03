@@ -1,0 +1,56 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="Calculator" Height="353.429" Width="252.714"
+        MinHeight="350" MinWidth="250">
+    <Border Padding="4,0,0,0">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="EquationDisplay" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4" Text="" HorizontalAlignment="Right" FontSize="25"/>
+            <TextBlock x:Name="TextDisplay" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Text="0" HorizontalAlignment="Right" FontSize="25"/>
+            <Button x:Name="Percent" Grid.Column="0" Grid.Row="2" Content="" Margin="0,0,4,4" FontSize="25" Click="ButtonClick"/>
+            <Button x:Name="Sqrt" Grid.Column="1" Grid.Row="2" Content="√" Margin="0,0,4,4" FontSize="25" Click="ButtonClick"/>
+            <Button x:Name="Power" Grid.Column="2" Grid.Row="2" Content="x²" Margin="0,0,4,4" FontSize="25" Click="ButtonClick"/>
+            <Button x:Name="Delete" Grid.Column="3" Grid.Row="2" Content="⌫" Margin="0,0,4,4" FontSize="25" Click="ButtonClick"/>
+            <Button x:Name="ClearEdit" Grid.Column="0" Grid.Row="3" Content="CE" Margin="0,0,4,4" FontSize="25" Click="ButtonClick"/>
+            <Button x:Name="Clear" Grid.Column="1" Grid.Row="3" Content="C" Margin="0,0,4,4" FontSize="25" Click="ButtonClick"/>
+            <Button x:Name="PowerToN" Grid.Column="2" Grid.Row="3" Content="xⁿ" Margin="0,0,4,4" FontSize="25" Click="ButtonClick"/>
+            <Button x:Name="Divide" Grid.Column="3" Grid.Row="3" Content="÷" Margin="0,0,4,4" FontSize="25" Click="ButtonClick"/>
+            <Button x:Name="Seven" Grid.Column="0" Grid.Row="4" Content="7" Margin="0,0,4,4" FontSize="25" Click="ButtonClick"/>
+            <Button x:Name="Eight" Grid.Column="1" Grid.Row="4" Content="8" Margin="0,0,4,4" FontSize="25" Click="ButtonClick"/>
+            <Button x:Name="Nine" Grid.Column="2" Grid.Row="4" Content="9" Margin="0,0,4,4" FontSize="25" Click="ButtonClick"/>
+            <Button x:Name="Times" Grid.Column="3" Grid.Row="4" Content="×" Margin="0,0,4,4" FontSize="25" Click="ButtonClick"/>
+            <Button x:Name="Four" Grid.Column="0" Grid.Row="5" Content="4" Margin="0,0,4,4" FontSize="25" Click="ButtonClick"/>
+            <Button x:Name="Five" Grid.Column="1" Grid.Row="5" Content="5" Margin="0,0,4,4" FontSize="25" Click="ButtonClick"/>
+            <Button x:Name="Six" Grid.Column="2" Grid.Row="5" Content="6" Margin="0,0,4,4" FontSize="25" Click="ButtonClick"/>
+            <Button x:Name="Minus" Grid.Column="3" Grid.Row="5" Content="-" Margin="0,0,4,4" FontSize="25" Click="ButtonClick"/>
+            <Button x:Name="One" Grid.Column="0" Grid.Row="6" Content="1" Margin="0,0,4,4" FontSize="25" Click="ButtonClick"/>
+            <Button x:Name="Two" Grid.Column="1" Grid.Row="6" Content="2" Margin="0,0,4,4" FontSize="25" Click="ButtonClick"/>
+            <Button x:Name="Three" Grid.Column="2" Grid.Row="6" Content="3" Margin="0,0,4,4" FontSize="25" Click="ButtonClick"/>
+            <Button x:Name="Plus" Grid.Column="3" Grid.Row="6" Content="+" Margin="0,0,4,4" FontSize="25" Click="ButtonClick"/>
+            <Button x:Name="Negate" Grid.Column="0" Grid.Row="7" Content="±" Margin="0,0,4,4" FontSize="25" Click="ButtonClick"/>
+            <Button x:Name="Zero" Grid.Column="1" Grid.Row="7" Content="0" Margin="0,0,4,4" FontSize="25" Click="ButtonClick"/>
+            <Button x:Name="Decimal" Grid.Column="2" Grid.Row="7" Content="." Margin="0,0,4,4" FontSize="25" Click="ButtonClick"/>
+            <Button x:Name="Equals" Grid.Column="3" Grid.Row="7" Content="=" Margin="0,0,4,4" FontSize="25" Click="ButtonClick"/>
+        </Grid>
+    </Border>
+</Window>
